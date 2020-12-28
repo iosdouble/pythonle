@@ -306,7 +306,17 @@ def main():
                   'https://blog.csdn.net/nihui123/article/details/110837368',
                   'https://blog.csdn.net/nihui123/article/details/110736101',
                   'https://blog.csdn.net/nihui123/article/details/110673049',
-                  'https://blog.csdn.net/nihui123/article/details/107889968'
+                  'https://blog.csdn.net/nihui123/article/details/107889968',
+                  'https://blog.csdn.net/nihui123/article/details/106961520',
+                  'https://blog.csdn.net/nihui123/article/details/110673049',
+                  'https://blog.csdn.net/nihui123/article/details/108143118',
+                  'https://blog.csdn.net/nihui123/article/details/109141708',
+                  'https://blog.csdn.net/nihui123/article/details/107092736',
+                  'https://blog.csdn.net/nihui123/article/details/105564035',
+                  'https://blog.csdn.net/nihui123/article/details/111302114',
+                  'https://blog.csdn.net/nihui123/article/details/111396333',
+                  'https://blog.csdn.net/nihui123/article/details/107945059',
+                  'https://blog.csdn.net/nihui123/article/details/111248803'
                   ]
         print("文章列表总数 %d",len(usl_list))
 
@@ -320,7 +330,7 @@ def main():
                 read_num = parse_page(html)
                 if read_num:
                     print('当前阅读量：', read_num)
-            sleep_time = random.randint(60, 100)
+            sleep_time = random.randint(60, 120)
             print('please wait', sleep_time, 's')
             time.sleep(sleep_time)  # 设置访问频率，过于频繁的访问会触发反爬虫
     except Exception :
